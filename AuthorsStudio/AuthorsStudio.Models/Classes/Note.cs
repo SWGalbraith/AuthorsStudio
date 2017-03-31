@@ -4,11 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthorsStudio.Models.Classes
+namespace AuthorsStudio.Models
 {
     public class Note : INote
     {
-        public string getContent
+        public Guid NoteId
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public string Content
         {
             get
             {
@@ -21,7 +29,7 @@ namespace AuthorsStudio.Models.Classes
             }
         }
 
-        public IChapter getParentChapter
+        public IChapter ParentChapter
         {
             get
             {
@@ -29,7 +37,7 @@ namespace AuthorsStudio.Models.Classes
             }
         }
 
-        public IProject getParentProject
+        public IProject ParentProject
         {
             get
             {
@@ -37,7 +45,7 @@ namespace AuthorsStudio.Models.Classes
             }
         }
 
-        public string getTitle
+        public string Title
         {
             get
             {

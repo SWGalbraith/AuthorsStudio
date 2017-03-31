@@ -9,6 +9,8 @@ namespace AuthorsStudio.Models
 {
     public interface IProject
     {
+        Guid ProjectId { get; }
+
         string Title { get; set; }
 
         string ImagePath { get; set; }

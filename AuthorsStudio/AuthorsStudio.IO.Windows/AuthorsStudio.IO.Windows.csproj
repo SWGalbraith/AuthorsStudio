@@ -51,6 +51,10 @@
       <Project>{3e5f4963-63d9-426a-ac17-e9a2d1ab0186}</Project>
       <Name>AuthorsStudio.IO.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AuthorsStudio.Models\AuthorsStudio.Models.csproj">
+      <Project>{1f6a4199-d042-4f5d-93d7-5c007d86a502}</Project>
+      <Name>AuthorsStudio.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

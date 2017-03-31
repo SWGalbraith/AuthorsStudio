@@ -8,14 +8,16 @@ namespace AuthorsStudio.Models
 {
     public interface IAuthor
     {
+        Guid AuthorId { get; }
+
         string Name { get; set; }
 
         IAddress Address { get; set; }
 
-        string getEmailAddress { get; set; }
+        string EmailAddress { get; set; }
 
-        List<string> getContactNumbersList { get; set; }
+        List<string> ContactNumbersList { get; set; }
 
-        List<IProject> getAssociatedProjectsList { get; }
+        List<IProject> AssociatedProjectsList { get; }
     }
 }

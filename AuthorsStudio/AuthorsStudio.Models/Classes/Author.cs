@@ -4,10 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthorsStudio.Models.Classes
+namespace AuthorsStudio.Models
 {
     public class Author : IAuthor
     {
+        public Guid AuthorId
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public IAddress Address
         {
             get
@@ -21,7 +29,7 @@ namespace AuthorsStudio.Models.Classes
             }
         }
 
-        public List<IProject> getAssociatedProjectsList
+        public List<IProject> AssociatedProjectsList
         {
             get
             {
@@ -29,7 +37,7 @@ namespace AuthorsStudio.Models.Classes
             }
         }
 
-        public List<string> getContactNumbersList
+        public List<string> ContactNumbersList
         {
             get
             {
@@ -42,7 +50,7 @@ namespace AuthorsStudio.Models.Classes
             }
         }
 
-        public string getEmailAddress
+        public string EmailAddress
         {
             get
             {

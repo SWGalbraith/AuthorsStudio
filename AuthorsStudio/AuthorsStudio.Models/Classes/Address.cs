@@ -4,10 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthorsStudio.Models.Classes
+namespace AuthorsStudio.Models
 {
     public class Address : IAddress
     {
+        public Guid AddressId
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public string BuildingNumberOrName
         {
             get

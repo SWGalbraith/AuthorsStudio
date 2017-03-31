@@ -40,12 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileConverterType.cs" />
     <Compile Include="IAuthorStorageManager.cs" />
     <Compile Include="IFileConverter.cs" />
     <Compile Include="IFileConverterFactory.cs" />
     <Compile Include="IProjectStorageManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AuthorsStudio.Models\AuthorsStudio.Models.csproj">
+      <Project>{1f6a4199-d042-4f5d-93d7-5c007d86a502}</Project>
+      <Name>AuthorsStudio.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

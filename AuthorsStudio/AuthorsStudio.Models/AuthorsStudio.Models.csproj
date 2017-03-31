@@ -45,18 +45,13 @@
     <Compile Include="Classes\Chapter.cs" />
     <Compile Include="Classes\Note.cs" />
     <Compile Include="Classes\Project.cs" />
+    <Compile Include="Enums\FileConverterType.cs" />
     <Compile Include="Interfaces\IAddress.cs" />
     <Compile Include="Interfaces\IAuthor.cs" />
     <Compile Include="Interfaces\IChapter.cs" />
     <Compile Include="Interfaces\INote.cs" />
     <Compile Include="Interfaces\IProject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AuthorsStudio.IO.Windows\AuthorsStudio.IO.Windows.csproj">
-      <Project>{ee3ff65f-bb63-4acb-b59c-1faf491fce16}</Project>
-      <Name>AuthorsStudio.IO.Windows</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

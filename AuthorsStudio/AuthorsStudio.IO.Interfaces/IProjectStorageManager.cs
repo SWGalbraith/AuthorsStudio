@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AuthorsStudio.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -11,15 +12,15 @@ namespace AuthorsStudio.IO.Interfaces
     {
         void SaveProject(IProject project);
 
-        void SaveProject(IProject project, String filepath);
+        void SaveProject(IProject project, string filepath);
         
         void DeleteProject(IProject project);
         
         List<IProject> GetStoredProjectsList();
         
-        IProject GetProject(String projectTitle);
+        IProject GetProject(string projectTitle);
         
-        boolean DoesProjectAlreadyExist(String projectTitle);
+        bool DoesProjectAlreadyExist(string projectTitle);
         
         void ImportProjectsFromStorageFile(FileInfo projectStorageFile);
     }

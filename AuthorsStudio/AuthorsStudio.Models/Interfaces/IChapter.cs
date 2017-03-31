@@ -8,15 +8,17 @@ namespace AuthorsStudio.Models
 {
     public interface IChapter
     {
+        Guid ChapterId { get; }
+
         int Index { get; set; }
 
-        String Title { get; set; }
+        string Title { get; set; }
 
-        String Subtitle { get; set; }
+        string Subtitle { get; set; }
 
-        String Content { get; set; }
+        string Content { get; set; }
 
-        String WordCount { get; set; }
+        string WordCount { get; set; }
 
         IAuthor Author { get; set; }
 
@@ -30,6 +32,6 @@ namespace AuthorsStudio.Models
 
         void DeleteChapterNote(INote note);
 
-        void DeleteChapterNote(String noteTitle);
+        void DeleteChapterNote(string noteTitle);
     }
 }

@@ -8,12 +8,14 @@ namespace AuthorsStudio.Models
 {
     public interface INote
     {
-        String getTitle { get; set; }
+        Guid NoteId { get; }
 
-        String getContent { get; set; }
+        string Title { get; set; }
 
-        IProject getParentProject { get; }
+        string Content { get; set; }
 
-        IChapter getParentChapter { get; }
+        IProject ParentProject { get; }
+
+        IChapter ParentChapter { get; }
     }
 }

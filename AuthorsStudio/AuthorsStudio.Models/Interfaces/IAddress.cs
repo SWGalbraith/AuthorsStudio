@@ -8,6 +8,8 @@ namespace AuthorsStudio.Models
 {
     public interface IAddress
     {
+        Guid AddressId { get; }
+
         string FlatNumberOrName { get; set; }
 
         string BuildingNumberOrName { get; set; }

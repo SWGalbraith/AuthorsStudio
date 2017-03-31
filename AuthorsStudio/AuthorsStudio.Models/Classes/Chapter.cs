@@ -4,10 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthorsStudio.Models.Classes
+namespace AuthorsStudio.Models
 {
     public class Chapter : IChapter
     {
+        public Guid ChapterId
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
+
         public IAuthor Author
         {
             get
