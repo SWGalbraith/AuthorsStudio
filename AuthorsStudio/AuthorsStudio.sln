@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsStudio.Models", "Aut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsStudio.IO.Windows", "AuthorsStudio.IO.Windows\AuthorsStudio.IO.Windows.csproj", "{EE3FF65F-BB63-4ACB-B59C-1FAF491FCE16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsStudio.IO.Interfaces", "AuthorsStudio.IO.Interfaces\AuthorsStudio.IO.Interfaces.csproj", "{3E5F4963-63D9-426A-AC17-E9A2D1AB0186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EE3FF65F-BB63-4ACB-B59C-1FAF491FCE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE3FF65F-BB63-4ACB-B59C-1FAF491FCE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE3FF65F-BB63-4ACB-B59C-1FAF491FCE16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5F4963-63D9-426A-AC17-E9A2D1AB0186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E5F4963-63D9-426A-AC17-E9A2D1AB0186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E5F4963-63D9-426A-AC17-E9A2D1AB0186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E5F4963-63D9-426A-AC17-E9A2D1AB0186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -40,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocxFileConverter.cs" />
+    <Compile Include="FileConverterFactory.cs" />
+    <Compile Include="PagesFileConverter.cs" />
+    <Compile Include="PdfFileConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AuthorsStudio.IO.Interfaces\AuthorsStudio.IO.Interfaces.csproj">
+      <Project>{3e5f4963-63d9-426a-ac17-e9a2d1ab0186}</Project>
+      <Name>AuthorsStudio.IO.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
