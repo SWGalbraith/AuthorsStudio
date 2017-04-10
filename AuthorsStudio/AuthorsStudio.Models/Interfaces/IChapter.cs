@@ -18,13 +18,13 @@ namespace AuthorsStudio.Models
 
         string Content { get; set; }
 
-        string WordCount { get; set; }
+        int WordCount { get; }
 
         IAuthor Author { get; set; }
 
         IProject ParentProject { get; set; }
 
-        List<INote> ChapterNotesList { get; set; }
+        List<INote> ChapterNotesList { get; }
 
         void AddChapterNote(INote note);
 

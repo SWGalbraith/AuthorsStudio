@@ -14,8 +14,8 @@ namespace AuthorsStudio.Models
 
         string Content { get; set; }
 
-        IProject ParentProject { get; }
-
         IChapter ParentChapter { get; }
+
+        IProject ParentProject { get; }
     }
 }

@@ -22,6 +22,12 @@ namespace AuthorsStudio.Models
 
         string Postcode { get; set; }
 
-        string FullAddress { get; set; }     
+        string FullAddress { get; }
+
+        void SetAddress(string flatNumberOrName, string buildingNumberOrName, string streetName, 
+            string townOrCityName, string regionName, string postcode);
+
+        void SetAddress(string buildingNumberOrName, string streetName,
+            string townOrCityName, string regionName, string postcode);
     }
 }

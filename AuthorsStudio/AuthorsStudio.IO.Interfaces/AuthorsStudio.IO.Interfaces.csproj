@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IAuthorStorageManager.cs" />
+    <Compile Include="ICompressor.cs" />
     <Compile Include="IFileConverter.cs" />
     <Compile Include="IFileConverterFactory.cs" />
     <Compile Include="IProjectStorageManager.cs" />

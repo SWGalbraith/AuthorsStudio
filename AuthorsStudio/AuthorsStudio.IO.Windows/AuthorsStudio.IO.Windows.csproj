@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StringCompressor.cs" />
     <Compile Include="DocxFileConverter.cs" />
     <Compile Include="FileConverterFactory.cs" />
     <Compile Include="PagesFileConverter.cs" />
