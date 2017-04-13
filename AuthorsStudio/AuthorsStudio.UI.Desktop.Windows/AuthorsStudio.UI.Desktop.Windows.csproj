@@ -55,7 +55,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="ViewModels\AddressEditorViewModel.cs" />
+    <Compile Include="ViewModels\AuthorEditorViewModel.cs" />
+    <Compile Include="ViewModels\AuthorsStudioViewModel.cs" />
+    <Compile Include="ViewModels\ChapterEditorViewModel.cs" />
+    <Compile Include="ViewModels\NoteEditorViewModel.cs" />
+    <Compile Include="ViewModels\ProjectsViewModel.cs" />
+    <Compile Include="Views\AddressEditorView.xaml.cs">
+      <DependentUpon>AddressEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AuthorEditorView.xaml.cs">
+      <DependentUpon>AuthorEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChapterEditorView.xaml.cs">
+      <DependentUpon>ChapterEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoteEditorView.xaml.cs">
+      <DependentUpon>NoteEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProjectsView.xaml.cs">
+      <DependentUpon>ProjectsView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\AuthorsStudioView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,10 +84,30 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Views\AuthorsStudioView.xaml.cs">
+      <DependentUpon>AuthorsStudioView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\AddressEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AuthorEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ChapterEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NoteEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProjectsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -101,10 +142,7 @@
       <Name>AuthorsStudio.Models</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
