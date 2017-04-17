@@ -10,6 +10,6 @@ namespace AuthorsStudio.IO.Interfaces
 {
     public interface IFileConverter
     {
-        FileInfo ConvertProject(IProject project);
+        FileInfo ConvertAndSaveProject(IProject project, string filepath);
     }
 }

@@ -19,7 +19,9 @@ namespace AuthorsStudio.IO.Interfaces
         List<IProject> GetStoredProjectsList();
         
         IProject GetProject(string projectTitle);
-        
+
+        IProject GetProjectFromFile(string filepath);
+
         bool DoesProjectAlreadyExist(string projectTitle);
         
         void ImportProjectsFromStorageFile(FileInfo projectStorageFile);

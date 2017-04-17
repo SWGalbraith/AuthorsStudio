@@ -137,6 +137,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AuthorsStudio.IO.Interfaces\AuthorsStudio.IO.Interfaces.csproj">
+      <Project>{3e5f4963-63d9-426a-ac17-e9a2d1ab0186}</Project>
+      <Name>AuthorsStudio.IO.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AuthorsStudio.IO.Windows\AuthorsStudio.IO.Windows.csproj">
+      <Project>{ee3ff65f-bb63-4acb-b59c-1faf491fce16}</Project>
+      <Name>AuthorsStudio.IO.Windows</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AuthorsStudio.Models\AuthorsStudio.Models.csproj">
       <Project>{1f6a4199-d042-4f5d-93d7-5c007d86a502}</Project>
       <Name>AuthorsStudio.Models</Name>
