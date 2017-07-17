@@ -11,6 +11,8 @@ namespace AuthorsStudio.IO.Windows
 {
     public class ProjectStorageManager : IProjectStorageManager
     {
+        // TODO: Finish this class
+
         private static string ProjectDetailsFilepath =
             FileStorageUtils.GetApplicationInstallPath() + Path.PathSeparator + "ProjectDetails.json";
 

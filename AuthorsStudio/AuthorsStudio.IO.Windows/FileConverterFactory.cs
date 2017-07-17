@@ -10,13 +10,7 @@ namespace AuthorsStudio.IO.Windows
 {
     public class FileConverterFactory : IFileConverterFactory
     {
-        // Private constructor to implement the Singleton Factory Pattern
-        private FileConverterFactory() { }
-
-        public static FileConverterFactory getInstance()
-        {
-            return new FileConverterFactory();
-        }
+        // TODO: Decide how to implement this class (Singleton? Static?)
 
         public IFileConverter GetFileConverter(FileConverterType converterType)
         {

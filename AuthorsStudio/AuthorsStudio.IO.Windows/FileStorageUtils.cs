@@ -10,6 +10,8 @@ namespace AuthorsStudio.IO.Windows
 {
     internal static class FileStorageUtils
     {
+        // TODO: Implement this class
+
         internal static string GetApplicationInstallPath()
         {
             return Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);

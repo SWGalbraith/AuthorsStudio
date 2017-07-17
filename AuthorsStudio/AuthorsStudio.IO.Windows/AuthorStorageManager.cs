@@ -6,11 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using AuthorsStudio.Models;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace AuthorsStudio.IO.Windows
 {
     public class AuthorStorageManager : IAuthorStorageManager
     {
+        // TODO: Finish this class
+
         private static string AuthorDetailsFilepath = 
             FileStorageUtils.GetApplicationInstallPath() + Path.PathSeparator + "AuthorDetails.json";
 
@@ -82,6 +85,8 @@ namespace AuthorsStudio.IO.Windows
             string authorFileContents = null;
 
             // Get the content and turn it into IAuthor objects
+            JsonTextReader reader = new JsonTextReader(new StringReader(""));
+            
 
             SaveAuthorsStorageFile();
         }
