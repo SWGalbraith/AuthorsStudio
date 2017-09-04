@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace AuthorsStudio.UI.Desktop.Windows.ViewModels
 {
-    public class AuthorsStudioViewModel : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
+    public class AuthorsStudioViewModel : BaseViewModel
+    { 
     }
 }

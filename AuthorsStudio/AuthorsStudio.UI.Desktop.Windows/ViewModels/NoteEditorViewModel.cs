@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace AuthorsStudio.UI.Desktop.Windows.ViewModels
 {
-    public class NoteEditorViewModel : INotifyPropertyChanged
+    public class NoteEditorViewModel : BaseViewModel
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+
     }
 }

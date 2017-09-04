@@ -58,6 +58,7 @@
     <Compile Include="ViewModels\AddressEditorViewModel.cs" />
     <Compile Include="ViewModels\AuthorEditorViewModel.cs" />
     <Compile Include="ViewModels\AuthorsStudioViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\ChapterEditorViewModel.cs" />
     <Compile Include="ViewModels\NoteEditorViewModel.cs" />
     <Compile Include="ViewModels\ProjectsViewModel.cs" />

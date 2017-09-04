@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace AuthorsStudio.UI.Desktop.Windows.ViewModels
 {
-    public class ChapterEditorViewModel : INotifyPropertyChanged
+    public class ChapterEditorViewModel : BaseViewModel
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+        
     }
 }
