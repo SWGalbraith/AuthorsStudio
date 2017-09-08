@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AuthorsStudio.UI.Desktop.Windows
+namespace AuthorsStudio.UI.Desktop.Windows.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

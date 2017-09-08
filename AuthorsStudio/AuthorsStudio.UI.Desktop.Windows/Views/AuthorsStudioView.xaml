@@ -1,12 +1,40 @@
-﻿<Window x:Class="AuthorsStudio.UI.Desktop.Windows.MainWindow"
+﻿<Window x:Class="AuthorsStudio.UI.Desktop.Windows.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:AuthorsStudio.UI.Desktop.Windows"
+        xmlns:local="clr-namespace:AuthorsStudio.UI.Desktop.Windows.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Authors Studio" Height="350" Width="525">
     <Grid>
         
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Menu Bar -->
+        <DockPanel Grid.Row="0" LastChildFill="False">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="File">
+                    <MenuItem Header="_Open Project..." />
+                    <MenuItem Header="_Save" Visibility="{Binding IsProjectOpen, Converter={StaticResource BooleanToVisibility}}" />
+                    <MenuItem Header="Save As..." Visibility="{Binding IsProjectOpen, Converter={StaticResource BooleanToVisibility}}" />
+                </MenuItem>
+                <MenuItem Header="Project">
+                    
+                </MenuItem>
+                <MenuItem Header="Author">
+                    
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
+        <!-- Main Control Area -->
+        <local:ProjectsView Visibility="{Binding IsProjectOpen, Converter={StaticResource BooleanToVisibility}, ConverterParameter=True}" />
+        <local:AddressEditorView Visibility="Hidden"/>
+        <local:AuthorEditorView Visibility="Hidden" />
+        <local:ChapterEditorView Visibility="Hidden" />
+        <local:NotesView Visibility="Hidden" />
     </Grid>
 </Window>
